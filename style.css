@@ -1,5 +1,5 @@
 /* Basic Style */
-.task {
+.task_body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -22,7 +22,7 @@
 }
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -32,20 +32,29 @@
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.task-wrapper {
     display: flex;
 }
-ul {
+#incompleted-tasks,
+#completed-tasks{
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.main_incompleted-task-item--edit,
+.main_incompleted-tasks-item--edit-mode,
+.main_incompleted-task-item--edit,
+.main_completed-tasks-item--edit-mode,
+.main_todo-list,
+.main_todo-completed {
     list-style:none;
 }
-input,button{
+.main_task-check-box,
+.main_edit,
+.main_delete{
     outline:none;
 }
-button {
+.main_edit,
+.main_delete {
     background: none;
     border: 0px;
     color: #888;
@@ -54,7 +63,8 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.main_edit:hover,
+.main_delete:hover {
     color: #3a3A3a;
 }
 /* Heading */

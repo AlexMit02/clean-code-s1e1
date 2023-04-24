@@ -144,10 +144,10 @@
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+.main_completed-tasks-list .main_task-check {
+    text-decoration: line-through;
     color: #888;
-}
+  }
 
 /* Edit Task */
 ul li input[type=text] {

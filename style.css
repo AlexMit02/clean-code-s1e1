@@ -150,15 +150,17 @@
   }
 
 /* Edit Task */
-ul li input[type=text] {
+.main_task-text {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.main_incompleted-tasks-list li.edit-mode .main_task-text,
+.main_completed-tasks-list li.edit-mode .main_task-text {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.main_incompleted-tasks-list li.edit-mode .main_task-check,
+.main_completed-tasks-list li.edit-mode .main_task-check {
     display:none;
 }
